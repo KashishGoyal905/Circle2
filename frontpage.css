@@ -1,0 +1,132 @@
+@font-face {
+	font-family: "ubuntu";
+	font-style: italic;
+	font-weight: 300;
+	src: local("Lato Light Italic"), local("Lato-LightItalic"),
+		url(https://fonts.gstatic.com/s/ubuntucondensed/v8/u-4k0rCzjgs5J7oXnJcM_0kACGMtT-Dfqw.woff2)
+			format("woff2");
+}
+html{
+	font-size: 62.5%;
+	/*1 rem=10px;*/
+
+}
+body{
+	margin: 0rem;
+	background-image: url('frontimage.jpg');
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.wrapper{
+    position: absolute;
+	height: 100vh;
+	width: 100vw;
+	
+}
+
+p{
+	position: relative;
+	color: #02475e;
+	font-size: 3rem;
+	text-shadow: 0px 0px 1px black;	
+	text-align: center;	
+	top: 60%;
+	margin-left: 3%;
+}
+
+#btn{
+	color: white;
+	font-size:3.5rem; 
+	background-color: rgba(236, 31, 31, 0);
+	color: red;
+	border: 0;
+	cursor: pointer;
+
+}
+#btn:hover{
+	box-shadow: 0 0 10px rgb(255,0,0);
+}
+
+#div2{
+	position: relative;
+	width: 100%;
+}
+#div3{
+	position: absolute;
+	bottom: 5%;
+	margin-left: 42%;
+}
+#Logo{
+	position: absolute;
+	margin-left: 44%;
+	margin-top: 10%;
+	height: 17rem;
+	width: 17rem;
+}
+
+  h1 {
+	  position: absolute;
+	color: #fff;
+	font-family: "ubuntu";
+	font-family: "Josefin Sans", sans-serif;
+	background: linear-gradient(to right,orange 20%, red 50%, rgba(252, 227, 10, 0.938)  60%);
+	background-size: auto auto;
+	background-clip: border-box;
+	background-size: 200% auto;
+	color: #fff;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: textclip 1.5s linear infinite;
+	display: block;
+	font-size:10rem;
+	text-align: center;
+	margin-left: 36%;	
+	top: 40%;
+}
+
+@keyframes textclip {
+to {
+	background-position: 200% center;
+}
+}
+
+  
+
+
+/*media queries*/
+
+
+@media only screen and (max-width: 640px) {
+	body{
+		width: 100vw;
+		height: 100vh;
+	}
+	#Logo{
+		height: 13rem;
+		width: 13rem;
+		margin-left: 34vw;
+	}
+	h1{
+		font-size:6.2rem;
+		margin-left: 17%;
+	}
+	#btn{
+		font-size:3.5rem; 		
+	}
+	#div3{
+		bottom: 10%;
+		margin: 0 13%;
+	}
+
+	p{
+		text-shadow: 2px 2px 2px  black;
+		color: #ff8303;
+		font-weight: 900;
+		font-size: 2.1rem;
+		text-align: center;	
+		top: 55%;
+	}
+	
+}
