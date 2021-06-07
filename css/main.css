@@ -796,9 +796,11 @@ footer nav ul{
     display: block;
 }
 #myLinks1{
+    color: black;
     display: none;
 }
 .mobile-container{
+    display: inline-block;
     display:block;
 }
 
